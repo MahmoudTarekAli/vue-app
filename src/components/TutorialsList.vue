@@ -37,10 +37,7 @@
                     <label><strong>Title:</strong></label> {{ currentTutorial.title }}
                 </div>
                 <div>
-                    <label><strong>Description:</strong></label> {{ currentTutorial.description }}
-                </div>
-                <div>
-                    <label><strong>Status:</strong></label> {{ currentTutorial.published ? "Published" : "Pending" }}
+                    <label><strong>Description:</strong></label> {{ currentTutorial.body }}
                 </div>
 
                 <router-link :to="'/tutorials/' + currentTutorial.id" class="badge badge-warning">details</router-link>
